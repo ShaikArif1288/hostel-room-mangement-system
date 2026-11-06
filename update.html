@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Update Hostel Room</h1>
+
+<form id="updateForm">
+
+    <input id="room_id" type="number"
+           placeholder="Room ID" min="1" required>
+
+    <input id="room_no" placeholder="Room Number" required>
+
+    <input id="block_name" placeholder="Block Name" required>
+
+    <input id="capacity" type="number"
+           placeholder="Capacity" min="1" required>
+
+    <select id="status" required>
+        <option value="">Select Status</option>
+        <option>Available</option>
+        <option>Occupied</option>
+        <option>Maintenance</option>
+    </select>
+
+    <button type="submit">Update Room</button>
+
+</form>
+
+<p id="message"></p>
+
+<a href="list.html">View Rooms</a>
+<a href="index.html">Home</a>
+
+<script src="script.js"></script>
+</body>
+</html>

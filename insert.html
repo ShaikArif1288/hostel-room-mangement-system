@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Insert Hostel Room</h1>
+
+<form id="insertForm">
+    <input id="room_no" placeholder="Room Number" required>
+
+    <input id="block_name" placeholder="Block Name" required>
+
+    <input id="capacity" type="number"
+           placeholder="Capacity" min="1" required>
+
+    <select id="status" required>
+        <option value="">Select Status</option>
+        <option>Available</option>
+        <option>Occupied</option>
+        <option>Maintenance</option>
+    </select>
+
+    <button type="submit">Insert Room</button>
+</form>
+
+<p id="message"></p>
+
+<a href="index.html">Home</a>
+
+<script src="script.js"></script>
+</body>
+</html>
